@@ -1,0 +1,10 @@
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    karta VARCHAR(16) UNIQUE NOT NULL,
+    kod VARCHAR(4) NOT NULL,
+    balans NUMERIC(12,2) DEFAULT 0
+);
+
+INSERT INTO users (karta, kod, balans) VALUES ('1111222233334444', '1234', 100000);
+INSERT INTO users (karta, kod, balans) VALUES ('5555666677778888', '4321', 50000);
+INSERT INTO users (karta, kod, balans) VALUES ('1212343456567878', '4321', 10000);
